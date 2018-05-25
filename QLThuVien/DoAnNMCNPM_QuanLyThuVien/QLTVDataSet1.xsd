@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="QLTVDataSet1" targetNamespace="http://tempuri.org/QLTVDataSet1.xsd" xmlns:mstns="http://tempuri.org/QLTVDataSet1.xsd" xmlns="http://tempuri.org/QLTVDataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="QLTV" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="QLTV (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.DoAnNMCNPM_QuanLyThuVien.Properties.Settings.GlobalReference.Default.QLTV" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="TKSachTraTreTableAdapter" GeneratorDataComponentClassName="TKSachTraTreTableAdapter" Name="TKSachTraTre" UserDataComponentName="TKSachTraTreTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="QLTV (Settings)" DbObjectName="QLTV.dbo.TKSachTraTre" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT SoNgayTraMuon, TenDauSach, NgayMuon FROM dbo.TKSachTraTre</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="SoNgayTraMuon" DataSetColumn="SoNgayTraMuon" />
+              <Mapping SourceColumn="TenDauSach" DataSetColumn="TenDauSach" />
+              <Mapping SourceColumn="NgayMuon" DataSetColumn="NgayMuon" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="QLTVDataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="QLTVDataSet1" msprop:Generator_UserDSName="QLTVDataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="TKSachTraTre" msprop:Generator_TableClassName="TKSachTraTreDataTable" msprop:Generator_TableVarName="tableTKSachTraTre" msprop:Generator_TablePropName="TKSachTraTre" msprop:Generator_RowDeletingName="TKSachTraTreRowDeleting" msprop:Generator_RowChangingName="TKSachTraTreRowChanging" msprop:Generator_RowEvHandlerName="TKSachTraTreRowChangeEventHandler" msprop:Generator_RowDeletedName="TKSachTraTreRowDeleted" msprop:Generator_UserTableName="TKSachTraTre" msprop:Generator_RowChangedName="TKSachTraTreRowChanged" msprop:Generator_RowEvArgName="TKSachTraTreRowChangeEvent" msprop:Generator_RowClassName="TKSachTraTreRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SoNgayTraMuon" msprop:Generator_ColumnVarNameInTable="columnSoNgayTraMuon" msprop:Generator_ColumnPropNameInRow="SoNgayTraMuon" msprop:Generator_ColumnPropNameInTable="SoNgayTraMuonColumn" msprop:Generator_UserColumnName="SoNgayTraMuon" type="xs:int" minOccurs="0" />
+              <xs:element name="TenDauSach" msprop:Generator_ColumnVarNameInTable="columnTenDauSach" msprop:Generator_ColumnPropNameInRow="TenDauSach" msprop:Generator_ColumnPropNameInTable="TenDauSachColumn" msprop:Generator_UserColumnName="TenDauSach" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="80" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NgayMuon" msprop:Generator_ColumnVarNameInTable="columnNgayMuon" msprop:Generator_ColumnPropNameInRow="NgayMuon" msprop:Generator_ColumnPropNameInTable="NgayMuonColumn" msprop:Generator_UserColumnName="NgayMuon" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
